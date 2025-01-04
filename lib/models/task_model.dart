@@ -1,3 +1,5 @@
+import 'package:flutter_application_1/models/task_model.dart';
+
 class Task {
   final int id;
   final String title;
@@ -11,5 +13,9 @@ class Task {
     required this.description,
     required this.dueDate,
     this.isCompleted = false,
-  });
+  }) {
+    // TODO: implement Task
+    throw UnimplementedError();
+
+  }
 }

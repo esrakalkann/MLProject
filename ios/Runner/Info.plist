@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleGetInfoString</key>
+	<string>&lt;key&gt;UIBackgroundModes&lt;/key&gt;
+&lt;array&gt;
+  &lt;string&gt;fetch&lt;/string&gt;
+  &lt;string&gt;remote-notification&lt;/string&gt;
+&lt;/array&gt;
+
+&lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;
+&lt;string&gt;Your location is used to help track tasks near you.&lt;/string&gt;
+&lt;key&gt;NSLocationAlwaysUsageDescription&lt;/key&gt;
+&lt;string&gt;Your location is used to help track tasks near you.&lt;/string&gt;
+&lt;key&gt;UIUserTrackingUsageDescription&lt;/key&gt;
+&lt;string&gt;We need to use your location to give you task notifications based on your location.&lt;/string&gt;</string>
+	<key>LSApplicationCategoryType</key>
+	<string>&lt;key&gt;NSCalendarsFullAccessUsageDescription&lt;/key&gt;
+&lt;string&gt;Access most functions for calendar viewing and editing.&lt;/string&gt;</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
