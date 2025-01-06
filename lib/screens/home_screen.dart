@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -11,14 +10,29 @@ class HomeScreen extends StatelessWidget {
         title: const Text('To-Do List'),
       ),
       body: const Center(
-        child: Text('No tasks yet! Add some.'),
+        child: Text('No tasks yet! Add some.'), // Replace with dynamic task data
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Navigate to Add Task Screen
-          Navigator.pushNamed(context, '/add-task');
-        },
-        child: const Icon(Icons.add),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            heroTag: 'addTaskButton',
+            onPressed: () {
+              Navigator.pushNamed(context, '/add-task'); // Navigate to Add Task Screen
+            },
+            child: const Icon(Icons.add),
+            tooltip: 'Add Task',
+          ),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+            heroTag: 'calendarButton',
+            onPressed: () {
+              Navigator.pushNamed(context, '/calendar'); // Navigate to Calendar Screen
+            },
+            child: const Icon(Icons.calendar_today),
+            tooltip: 'View Calendar',
+          ),
+        ],
       ),
     );
   }
